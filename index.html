@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonkiDev</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="bg-orange-400 flex items-center">
+        <nav class="flex justify-around w-full">
+          <a href="/" class="p-5"><img src="#" alt="MonkiDev brand-logo"></a>
+          <section class="p-5">
+            <ul class="flex">
+              <li><a href="/" class="px-5">Home</a></li>
+              <li><a href="#tecnologies" class="px-5">Tecnologies</a></li>
+              <li><a href="#projects" class="px-5">Projects</a></li>
+              <li><a href="#contact-me"  class="px-5">Contact me</a></li>
+            </ul>
+          </section>
+          <section class="p-5">
+            <ul class="flex">
+              <li>
+                <a href="https://twitter.com/ElMonkiG_" target="_blank" class="px-2 icon"><span class="fa-brands fa-twitter"></span></a>
+              </li>
+              <li><a href="https://www.twitch.tv/monkig" target="_blank" class="px-2"><span class="fa-brands fa-twitch"></span></a></li>
+              <li><a href="https://www.github.com/RamonHA13" target="_blank" class="px-2"><span class="fa-brands fa-github"></span></a></li>
+            </ul>
+          </section>
+        </nav>
+      </header>
+      <main id="main-content" class="">
+        <section class="bg-emerald-500 flex justify-around">
+          <div class="p-5">
+            <div>
+              <h1 class="text-7xl">MonkiDev</h1>
+              <p class="text-xl mt-3 p-1">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
+            </div>
+            <div class="my-5">
+              <a href="#" class="pl-0 p-3">Contact me</a>
+              <a href="#" class="p-3">About me</a>
+            </div>
+          </div>
+          <img src="" alt="MonkiDev hero-logo">
+        </section>
+        <hr class="mx-auto my-3 w-1/12 border-t-8 border-blue-700 border-dotted ">
+        <section class="p-5 about-me">
+          <h2 class="text-3xl">About me</h2>
+          <p class="p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores laborum nobis ab aspernatur tenetur tempora ipsum exercitationem, fugit aperiam iure, a, voluptas repellat? Ea ad porro reprehenderit magnam tempora!</p>
+        </section>
+        <section class="p-5" id="tecnologies">
+          <h2 class="text-3xl text-center">Tecnologies</h2>
+          <ul class="flex justify-around p-10">
+            <li>
+              <figure class="transition-all hover:scale-150 duration-500">
+                <img src="./NodeJS.png" alt="NodeJs logo" class="">
+                <figcaption class="text-center text-lg p-1 font-bold">NodeJs</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="transition-all hover:scale-150 duration-500">
+                <img src="./TS.png" alt="TypeScript logo">
+                <figcaption class="text-center text-lg p-1 font-bold">TypeScript</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="transition-all hover:scale-150 duration-500">
+                <img src="./React.png" alt="TypeScript logo">
+                <figcaption class="text-center text-lg p-1 font-bold">React</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="transition-all hover:scale-150 duration-500">
+                <img src="./React.png" alt="TypeScript logo">
+                <figcaption class="text-center text-lg p-1 font-bold">React Native</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="transition-all hover:scale-150 duration-500">
+                <img src="./MySql.png" alt="TypeScript logo">
+                <figcaption class="text-center text-lg p-1 font-bold">MySql</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="transition-all hover:scale-150 duration-500">
+                <img src="./MongoDB.png" alt="TypeScript logo">
+                <figcaption class="text-center text-lg p-1 font-bold">MongoDB</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section class="p-5" id="projects">
+          <h2 class="text-3xl">Projects</h2>
+          <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste deleniti sapiente tenetur nostrum reiciendis laborum aliquam nisi quas reprehenderit. Commodi maiores laudantium quod odio cum nostrum eveniet pariatur nisi.</p>
+        </section>
+        <section class="p-5" id="contact-me">
+          <h2 class="text-3xl ml-7">Contact me</h2>
+          <form class="mt-1 p-2">
+            <div class="grid grid-cols-2 ">
+              <input type="text" name="nombre-completo" autocomplete="off" placeholder="Nombre completo" class="p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500">
+              <input type="text" name="correo" autocomplete="off" placeholder="Correo electrónico" class="p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500">
+              <input type="text" name="asunto" autocomplete="off" placeholder="Asunto" class="col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500">
+              <textarea name="mensaje" autocomplete="off" placeholder="Mensaje..." class="resize-none col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500" rows="5"></textarea>
+              <input type="submit" value="Enviar mensaje" class="hover:cursor-pointer p-5 border-solid border-blue-200 border-2 m-auto rounded-2xl col-span-2 hover:border-blue-400 hover:transition-colors hover:duration-300">
+            </div>
+          </form>
+          
+        </section>
+      </main>
+      <footer class="bg-white h-full">
+        <p class="text-center" id="copy"></p>
+      </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/9a5b41a4b1.js" crossorigin="anonymous"></script>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
