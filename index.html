@@ -1,116 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/icon" href="/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MonkiDev</title>
   </head>
-  <body>
-    <div id="app">
-      <header class="bg-orange-400 flex items-center">
-        <nav class="flex justify-around w-full">
-          <a href="/" class="p-5"><img src="#" alt="MonkiDev brand-logo"></a>
+   <body> 
+    <div id="app" class="bg-gradient-to-tr from-[#16162e] via-[#220934]  to-[#37003b]">
+      <header class="flex items-center w-full h-[78px] z-50">
+        <nav class="flex justify-between w-full items-center mx-20">
+          <h2 class="font-bold text-2xl text-slate-300 hover:text-slate-100"><a href="/">MonkiDev</a></h2>
           <section class="p-5">
             <ul class="flex">
-              <li><a href="/" class="px-5">Home</a></li>
-              <li><a href="#tecnologies" class="px-5">Tecnologies</a></li>
-              <li><a href="#projects" class="px-5">Projects</a></li>
-              <li><a href="#contact-me"  class="px-5">Contact me</a></li>
+              <li><a href='/' class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500 hover:cursor-pointer">Home</a></li>
+              <li><a href="#projects" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">Projects</a></li>
+              <li><a href="#tecnologies" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">Tecnologies</a></li>
+              <li><a href="#about-me"  class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">About me</a></li>
             </ul>
           </section>
           <section class="p-5">
             <ul class="flex">
               <li>
-                <a href="https://twitter.com/ElMonkiG_" target="_blank" class="px-2 icon"><span class="fa-brands fa-twitter"></span></a>
+                <a href="https://www.github.com/RamonHA13" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500 "><span class="fa-brands fa-github"></span></a>
               </li>
-              <li><a href="https://www.twitch.tv/monkig" target="_blank" class="px-2"><span class="fa-brands fa-twitch"></span></a></li>
-              <li><a href="https://www.github.com/RamonHA13" target="_blank" class="px-2"><span class="fa-brands fa-github"></span></a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/ram%C3%B3n-antonio-hern%C3%A1ndez-amaral-a794a0279/" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500" target="_blank"><span class="fa-brands fa-linkedin"></span></a>
+              </li> 
+              <li>
+                <a href="https://twitter.com/ElMonkiG_" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitter"></span></a>
+              </li>
+              <li><a href="https://www.twitch.tv/monkig" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitch"></span></a></li>
+              <!-- <li class="text-lg px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-xl duration-500">
+                <select name="languageSelect" id="" class="bg-transparent appearance-none outline-none overflow-y-hidden">
+                  <option value="en-us" default class="text-black">es-mx</option>  
+                  <option value="es-mx" class="text-black">en-us</option>
+                </select>
+              </li> -->
             </ul>
           </section>
         </nav>
       </header>
       <main id="main-content" class="">
-        <section class="bg-emerald-500 flex justify-around">
-          <div class="p-5">
-            <div>
-              <h1 class="text-7xl">MonkiDev</h1>
-              <p class="text-xl mt-3 p-1">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
-            </div>
-            <div class="my-5">
-              <a href="#" class="pl-0 p-3">Contact me</a>
-              <a href="#" class="p-3">About me</a>
-            </div>
+        <section class="flex justify-between p-5 mx-16 relative">
+          <div class="my-10">
+              <h1 class="text-7xl text-slate-300">Bring your idea, <br/> I'll handle the rest.</h1>
+              <p class="text-2xl my-10 text-slate-400">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
+              <a href="#contact-me" class="p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">Contact me</a>
           </div>
-          <img src="" alt="MonkiDev hero-logo">
+          <img src="./html2.png" class="hidden xl:block xl:right-64 h-3/4 w-1/5 absolute top-24" alt="MonkiDev hero-logo">
         </section>
-        <hr class="mx-auto my-3 w-1/12 border-t-8 border-blue-700 border-dotted ">
-        <section class="p-5 about-me">
-          <h2 class="text-3xl">About me</h2>
-          <p class="p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores laborum nobis ab aspernatur tenetur tempora ipsum exercitationem, fugit aperiam iure, a, voluptas repellat? Ea ad porro reprehenderit magnam tempora!</p>
+
+        <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
+
+        <section class="p-5 m-16" id="projects">
+          <h2 class="text-3xl text-slate-100">Projects</h2>
+          
         </section>
-        <section class="p-5" id="tecnologies">
-          <h2 class="text-3xl text-center">Tecnologies</h2>
+
+        <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
+
+        <section id="tecnologies" class="p-5 mx-16" >
+          <h2 class="text-3xl text-center text-slate-100">Tecnologies</h2>
           <ul class="flex justify-around p-10">
             <li>
               <figure class="transition-all hover:scale-150 duration-500">
                 <img src="./NodeJS.png" alt="NodeJs logo" class="">
-                <figcaption class="text-center text-lg p-1 font-bold">NodeJs</figcaption>
+                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">NodeJs</figcaption>
               </figure>
             </li>
             <li>
               <figure class="transition-all hover:scale-150 duration-500">
                 <img src="./TS.png" alt="TypeScript logo">
-                <figcaption class="text-center text-lg p-1 font-bold">TypeScript</figcaption>
+                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">TypeScript</figcaption>
               </figure>
             </li>
             <li>
               <figure class="transition-all hover:scale-150 duration-500">
                 <img src="./React.png" alt="TypeScript logo">
-                <figcaption class="text-center text-lg p-1 font-bold">React</figcaption>
+                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">React</figcaption>
               </figure>
             </li>
             <li>
               <figure class="transition-all hover:scale-150 duration-500">
                 <img src="./React.png" alt="TypeScript logo">
-                <figcaption class="text-center text-lg p-1 font-bold">React Native</figcaption>
+                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">React Native</figcaption>
               </figure>
             </li>
             <li>
               <figure class="transition-all hover:scale-150 duration-500">
                 <img src="./MySql.png" alt="TypeScript logo">
-                <figcaption class="text-center text-lg p-1 font-bold">MySql</figcaption>
+                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">MySql</figcaption>
               </figure>
             </li>
             <li>
               <figure class="transition-all hover:scale-150 duration-500">
                 <img src="./MongoDB.png" alt="TypeScript logo">
-                <figcaption class="text-center text-lg p-1 font-bold">MongoDB</figcaption>
+                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">MongoDB</figcaption>
               </figure>
             </li>
           </ul>
         </section>
-        <section class="p-5" id="projects">
-          <h2 class="text-3xl">Projects</h2>
-          <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste deleniti sapiente tenetur nostrum reiciendis laborum aliquam nisi quas reprehenderit. Commodi maiores laudantium quod odio cum nostrum eveniet pariatur nisi.</p>
+
+        <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
+
+        <section class="p-5 mx-16 about-me flex justify-between" id="about-me">
+          <div class="w-1/2 inline-block">
+            <h2 class="text-3xl text-slate-100">About me</h2>
+            <p class="my-2 text-slate-400 text-xl">
+              
+            </p>
+            <p class="my-2 text-slate-400 text-xl">
+              Soy un desarrollador web con una sólida base en tecnologías como HTML, CSS y JavaScript cuento con experiencia en la creación de aplicaciones
+              web modernas y atractivas. Me encanta combinar mi creatividad con mis habilidades técnicas para construir soluciones digitales que sean visualmente impactantes y funcionales.
+              Me considero una persona autodidacta que le gusta aprender nuevas tecnologías y mantenerme actualizado con las últimas tendencias en el campo del desarrollo web.
+            </p>
+            <p class="my-2 text-slate-400 text-xl">
+              A pesar de no tener experiencia laboral formal, cuento con diferentes <span class="font-bold underline"><a href="#projects">proyectos</a></span> los cuales demuestran mis capacidades técnicas a la hora de desarrollar software.
+            </p>
+            <p class="my-2 text-slate-400 text-xl">
+              Mis pasatiempos favoritos son: cocinar, escuchar música, ver peliculas y series, ver y jugar fútbol y aprender sobre ciencia y tecnología.
+            </p>
+            
+          </div>
+          <img src="./profile.jpg" alt="Ramón H. foto" class="inline rounded-full">
+          <!--<p class="my-1 text-slate-400"></p>-->
         </section>
-        <section class="p-5" id="contact-me">
-          <h2 class="text-3xl ml-7">Contact me</h2>
-          <form class="mt-1 p-2">
+        <!-- action="mailto:raan.heam@gmail.com?subject=Text&body=Test" -->
+        <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
+
+        <section class="p-5 mx-16" id="contact-me">
+          <h2 class="text-3xl  text-slate-100">Contact me</h2>
+          <form class="mt-1"  action="https://formspree.io/f/xgebglan" method="POST" >
             <div class="grid grid-cols-2 ">
-              <input type="text" name="nombre-completo" autocomplete="off" placeholder="Nombre completo" class="p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500">
-              <input type="text" name="correo" autocomplete="off" placeholder="Correo electrónico" class="p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500">
-              <input type="text" name="asunto" autocomplete="off" placeholder="Asunto" class="col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500">
-              <textarea name="mensaje" autocomplete="off" placeholder="Mensaje..." class="resize-none col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 m-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500" rows="5"></textarea>
-              <input type="submit" value="Enviar mensaje" class="hover:cursor-pointer p-5 border-solid border-blue-200 border-2 m-auto rounded-2xl col-span-2 hover:border-blue-400 hover:transition-colors hover:duration-300">
+              <input required type="text" name="nombre-completo" autocomplete="off" placeholder="Nombre completo" class="p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 mr-1 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
+              <input required type="email" name="email" autocomplete="off" placeholder="Correo electrónico" class="p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 ml-1 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
+              <input required type="text" name="asunto" autocomplete="off" placeholder="Asunto" class="col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
+              <textarea required name="message" autocomplete="off" placeholder="Mensaje..." class="resize-none col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300" rows="5"></textarea>
+              <input type="submit" value="Enviar mensaje" class="text-slate-100 hover:cursor-pointer p-5 border-solid border-blue-200 border-2 m-auto rounded-2xl col-span-2 hover:border-blue-400 hover:transition-colors hover:duration-300">
             </div>
           </form>
-          
         </section>
       </main>
-      <footer class="bg-white h-full">
-        <p class="text-center" id="copy"></p>
-      </footer>
     </div>
     <script src="https://kit.fontawesome.com/9a5b41a4b1.js" crossorigin="anonymous"></script>
     <script type="module" src="src/main.js"></script>

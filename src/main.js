@@ -1,7 +1,7 @@
 import './../style.css'
-import { footer } from './dom'
+import { addCurrentYearToFooter, addReposToProjectsSection, addAboutMeData } from './dom'
 
-document.addEventListener('DOMContentLoaded', () => {
-  const date = new Date().getFullYear()
-  footer.innerHTML = `&copy; Copyright ${date} MonkiDev`
-})
+addCurrentYearToFooter()
+addReposToProjectsSection()
+addAboutMeData()
+// fixHeader()
