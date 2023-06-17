@@ -1,17 +1,19 @@
-import { Octokit } from 'https://esm.sh/octokit'
 import { apiKey } from './settings'
 export default async function useRepos () {
-  const octokit = new Octokit({
-    auth: apiKey
-  })
-
-  const repos = await octokit.request('GET /users/ramonha13/repos', {
-    header: {
-      username: 'USERNAME',
-      'X-GitHub-Api-Version': '2022-11-28'
+  let publicRepos
+  fetch('https://api.github.com/users/ramonha13/repos', {
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      'Content-Type': 'application/json'
     }
   })
-
-  const publicRepos = repos.data.filter((repo) => repo.private === false)
-  return publicRepos
+    .then((response) => response.json())
+    .then((data) => {
+      publicRepos = data.filter((repo) => repo.private === false)
+      return publicRepos
+    })
+    .catch((error) => {
+      // Manejar el error
+      console.error(error)
+    })
 }

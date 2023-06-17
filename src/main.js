@@ -1,5 +1,5 @@
 import './../style.css'
-import { addCurrentYearToFooter, addReposToProjectsSection, addAboutMeData } from './dom'
+import { addCurrentYearToFooter, addAboutMeData, addReposToProjectsSection } from './dom'
 
 addCurrentYearToFooter()
 addReposToProjectsSection()
