@@ -1,6 +1,7 @@
 import './../style.css'
-import { addCurrentYearToFooter, addAboutMeData } from './dom'
+import { addCurrentYearToFooter, addAboutMeData, barsMenu, svgColor } from './dom'
 
 addCurrentYearToFooter()
 addAboutMeData()
-// fixHeader()
+svgColor()
+barsMenu()

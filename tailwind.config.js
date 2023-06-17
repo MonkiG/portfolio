@@ -7,12 +7,27 @@ export default {
   theme: {
     extend: {
       animation: {
-        metallic: 'metallic 2s linear ifinite'
+        'start-fade-in': 'start .3s ease-in-out',
+        'end-fade-out': 'end .3s ease-in-out',
+        'slide-left': 'slideLeft .3s ease-in-out',
+        'slide-right': 'slideRight .3s ease-in-out'
       },
       keyframes: {
-        metallic: {
-          '0%': { 'background-position': '0% 50%' },
-          '100%': { 'background-position': '100% 50%' }
+        start: {
+          from: { opacity: '0' },
+          to: { opacity: '1' }
+        },
+        end: {
+          from: { opacity: '1' },
+          to: { opacity: '0' }
+        },
+        slideLeft: {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(0)' }
+        },
+        slideRight: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(100%)' }
         }
       }
     }

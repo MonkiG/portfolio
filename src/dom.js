@@ -1,6 +1,44 @@
 const $ = selector => document.querySelector(selector)
 const app = $('#app')
 const firstPTagAboutMe = $('#about-me p')
+const bars = $('#bars')
+const menuCanvas = $('#menu-overlay')
+const closeMenu = $('.button-close')
+const closeMenuSvg = $('.button-close svg')
+const menuLayout = $('#menu-layout')
+
+export function barsMenu () {
+  closeMenuAnimations()
+  bars.addEventListener('click', () => {
+    menuCanvas.classList.remove('hidden')
+    menuCanvas.classList.add('fixed', 'animate-start-fade-in')
+    menuLayout.classList.add('animate-slide-left')
+  })
+}
+
+function closeMenuAnimations () {
+  closeMenu.addEventListener('click', () => {
+    menuCanvas.classList.remove('animate-start-fade-in')
+    menuLayout.classList.remove('animate-slide-left')
+    menuLayout.classList.add('animate-slide-right')
+    menuCanvas.classList.add('animate-end-fade-out')
+    setTimeout(() => {
+      menuCanvas.classList.add('hidden')
+      menuCanvas.classList.remove('fixed')
+      menuLayout.classList.remove('animate-slide-right')
+      menuCanvas.classList.remove('animate-end-fade-out')
+    }, 300)
+  })
+}
+
+export function svgColor () {
+  closeMenuSvg.addEventListener('mouseover', () => {
+    closeMenuSvg.setAttribute('fill', '#000')
+  })
+  closeMenu.addEventListener('mouseout', () => {
+    closeMenuSvg.setAttribute('fill', '#94a3b8')
+  })
+}
 
 export function addAboutMeData () {
   const actualDate = new Date()
