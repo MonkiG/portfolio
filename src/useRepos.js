@@ -2,7 +2,7 @@ import { Octokit } from 'https://esm.sh/octokit'
 
 export default async function useRepos () {
   const octokit = new Octokit({
-    auth: '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'
+    auth: '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'
   })
 
   const repos = await octokit.request('GET /user/repos', {

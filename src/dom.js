@@ -159,5 +159,8 @@ function addColorToLanguages () {
     if (language.innerText === 'TypeScript') {
       language.classList.add('bg-blue-400')
     }
+    if (language.innerText === 'HTML') {
+      language.classList.add('bg-orange-600')
+    }
   })
 }
