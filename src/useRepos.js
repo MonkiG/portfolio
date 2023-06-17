@@ -5,7 +5,7 @@ export default async function useRepos () {
     auth: apiKey
   })
 
-  const repos = await octokit.request('GET /user/repos', {
+  const repos = await octokit.request('GET /users/ramonha13/repos', {
     header: {
       username: 'USERNAME',
       'X-GitHub-Api-Version': '2022-11-28'
@@ -13,6 +13,5 @@ export default async function useRepos () {
   })
 
   const publicRepos = repos.data.filter((repo) => repo.private === false)
-
   return publicRepos
 }

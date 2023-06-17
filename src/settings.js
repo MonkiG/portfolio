@@ -1,1 +1,1 @@
-export const apiKey = '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'
+export const apiKey = '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'
