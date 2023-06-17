@@ -10,8 +10,8 @@
     <div id="app" class="bg-gradient-to-tr from-[#16162e] via-[#220934]  to-[#37003b]">
       <header class="flex items-center w-full h-[78px] z-50">
         <nav class="flex justify-between w-full items-center mx-20">
-          <h2 class="font-bold text-2xl text-slate-300 hover:text-slate-100"><a href="/">MonkiDev</a></h2>
-          <section class="p-5">
+          <h2 class="font-bold text-2xl text-slate-300 hover:text-slate-100 hidden sm:block"><a href="/">MonkiDev</a></h2>
+          <section class="hidden lg:block p-5">
             <ul class="flex">
               <li><a href='/' class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500 hover:cursor-pointer">Home</a></li>
               <li><a href="#projects" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">Projects</a></li>
@@ -19,7 +19,7 @@
               <li><a href="#about-me"  class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">About me</a></li>
             </ul>
           </section>
-          <section class="p-5">
+          <section class="hidden lg:block p-5">
             <ul class="flex">
               <li>
                 <a href="https://www.github.com/RamonHA13" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500 "><span class="fa-brands fa-github"></span></a>
@@ -48,15 +48,15 @@
               <p class="text-2xl my-10 text-slate-400">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
               <a href="#contact-me" class="p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">Contact me</a>
           </div>
-          <img src="./html2.png" class="hidden xl:block xl:right-64 h-3/4 w-1/5 absolute top-24" alt="MonkiDev hero-logo">
+          <img src="./html2.png" class="hidden xl:block xl:right-16 xl:h-3/4 2xl:block 2xl:right-64 2xl:h-3/4 w-1/5 absolute 2xl:top-24" alt="MonkiDev hero-logo">
         </section>
 
         <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
 
         <section class="p-5 m-16" id="projects">
-          <h2 class="text-3xl text-slate-100">Projects</h2>
-          <ul class="grid grid-cols-2 my-2">
-            <li class="m-5 transition-all duration-500 hover:scale-110 w-1/2">
+          <h2 class="text-3xl text-slate-100 text-center lg:text-left">Projects</h2>
+          <ul class="grid grid-cols-1 my-2 lg:grid-cols-2">
+            <li class="m-5 transition-all duration-500 hover:scale-110 w-1/2 place-self-center lg:place-self-start text-center lg:text-left">
               <a href="https://github.com/RamonHA13/CucStore" target="_blank">
                 <h3 class="text-slate-200 inline text-2xl mr-2">
                   CucStore
@@ -64,10 +64,10 @@
                 <h4 class="bg-yellow-400 p-1 inline text-xs language rounded-xl font-bold">
                   JavaScript
                 </h4>
-                <p class="text-slate-400">Frontend aplicación móvil de venta de productos en el Centro Universitario de la Costa UDG</p>
+                <p class="text-slate-400 hidden md:block">Frontend aplicación móvil de venta de productos en el Centro Universitario de la Costa UDG</p>
               </a>
             </li>
-            <li class="m-5 transition-all duration-500 hover:scale-110 w-1/2 place-self-end text-right">
+            <li class="m-5 transition-all duration-500 hover:scale-110 w-1/2 place-self-center text-center lg:place-self-end lg:text-right">
               <a href="https://github.com/RamonHA13/CucStore-API" target="_blank">
                 <h3 class="text-slate-200 inline text-2xl mr-2">
                   CucStore-Api
@@ -75,10 +75,10 @@
                 <h4 class="bg-blue-600 p-1 inline text-xs language rounded-xl font-bold">
                   TypeScript
                 </h4>
-                <p class="text-slate-400">Api para aplicación movil de venta de productos en el Centro Universitario de la Costa UDG</p>
+                <p class="text-slate-400 hidden md:block">Api para aplicación movil de venta de productos en el Centro Universitario de la Costa UDG</p>
               </a>
             </li>
-            <li class="m-5 transition-all duration-500 hover:scale-110">
+            <li class="m-5 transition-all duration-500 hover:scale-110 place-self-center lg:col-span-2 text-center">
               <a href="https://github.com/RamonHA13/TekashiRoll" target="_blank">
                 <h3 class="text-slate-200 inline text-2xl mr-2">
                   Tekashi-Roll
@@ -86,7 +86,7 @@
                 <h4 class="p-1 inline text-xs language rounded-xl font-bold bg-yellow-400">
                   JavaScript
                 </h4>
-                <p class="text-slate-400">Proyecto de universidad Cuc UDG</p>
+                <p class="text-slate-400 hidden md:block">Proyecto de universidad Cuc UDG</p>
               </a>
             </li>
           </ul>
@@ -96,40 +96,40 @@
 
         <section id="tecnologies" class="p-5 mx-16" >
           <h2 class="text-3xl text-center text-slate-100">Tecnologies</h2>
-          <ul class="flex justify-around p-10">
+          <ul class="grid grid-cols-1 md:grid md:grid-cols-3 lg:flex lg:justify-around p-10">
             <li>
-              <figure class="transition-all hover:scale-150 duration-500">
-                <img src="./NodeJS.png" alt="NodeJs logo" class="">
+              <figure class="transition-all hover:scale-150 duration-500 my-5">
+                <img src="./NodeJS.png" alt="NodeJs logo" class="m-auto">
                 <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">NodeJs</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500">
-                <img src="./TS.png" alt="TypeScript logo">
+              <figure class="transition-all hover:scale-150 duration-500 my-5">
+                <img src="./TS.png" alt="TypeScript logo" class="m-auto">
                 <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">TypeScript</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500">
-                <img src="./React.png" alt="TypeScript logo">
+              <figure class="transition-all hover:scale-150 duration-500 my-5">
+                <img src="./React.png" alt="TypeScript logo" class="m-auto">
                 <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">React</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500">
-                <img src="./React.png" alt="TypeScript logo">
+              <figure class="transition-all hover:scale-150 duration-500 my-5">
+                <img src="./React.png" alt="TypeScript logo" class="m-auto">
                 <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">React Native</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500">
-                <img src="./MySql.png" alt="TypeScript logo">
+              <figure class="transition-all hover:scale-150 duration-500 my-5">
+                <img src="./MySql.png" alt="TypeScript logo" class="m-auto">
                 <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">MySql</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500">
-                <img src="./MongoDB.png" alt="TypeScript logo">
+              <figure class="transition-all hover:scale-150 duration-500 my-5">
+                <img src="./MongoDB.png" alt="TypeScript logo" class="m-auto">
                 <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">MongoDB</figcaption>
               </figure>
             </li>
@@ -138,26 +138,23 @@
 
         <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
 
-        <section class="p-5 mx-16 about-me flex justify-between" id="about-me">
-          <div class="w-1/2 inline-block">
+        <section class="p-5 mx-16 about-me flex justify-between items-center" id="about-me">
+          <div class="lg:w-1/2 inline-block">
             <h2 class="text-3xl text-slate-100">About me</h2>
             <p class="my-2 text-slate-400 text-xl">
               
             </p>
             <p class="my-2 text-slate-400 text-xl">
-              Soy un desarrollador web con una sólida base en tecnologías como HTML, CSS y JavaScript cuento con experiencia en la creación de aplicaciones
-              web modernas y atractivas. Me encanta combinar mi creatividad con mis habilidades técnicas para construir soluciones digitales que sean visualmente impactantes y funcionales.
+              Soy un desarrollador web con una sólida base en tecnologías como HTML, CSS y JavaScript (<span class="font-bold underline"><a href="#projects">proyectos</a></span>). Cuento con experiencia en la creación de aplicaciones
+              web modernas y atractivas. 
               Me considero una persona autodidacta que le gusta aprender nuevas tecnologías y mantenerme actualizado con las últimas tendencias en el campo del desarrollo web.
-            </p>
-            <p class="my-2 text-slate-400 text-xl">
-              A pesar de no tener experiencia laboral formal, cuento con diferentes <span class="font-bold underline"><a href="#projects">proyectos</a></span> los cuales demuestran mis capacidades técnicas a la hora de desarrollar software.
             </p>
             <p class="my-2 text-slate-400 text-xl">
               Mis pasatiempos favoritos son: cocinar, escuchar música, ver peliculas y series, ver y jugar fútbol y aprender sobre ciencia y tecnología.
             </p>
             
           </div>
-          <img src="./profile.jpg" alt="Ramón H. foto" class="inline rounded-full">
+          <img src="./profile.jpg" alt="Ramón H. foto" class="hidden rounded-full lg:inline lg:h-[350px] lg:w-[350px] xl:h-[400px] xl:w-[400px]">
           <!--<p class="my-1 text-slate-400"></p>-->
         </section>
         <!-- action="mailto:raan.heam@gmail.com?subject=Text&body=Test" -->
@@ -166,11 +163,11 @@
         <section class="p-5 mx-16" id="contact-me">
           <h2 class="text-3xl  text-slate-100">Contact me</h2>
           <form class="mt-1"  action="https://formspree.io/f/xgebglan" method="POST" >
-            <div class="grid grid-cols-2 ">
+            <div class="grid grid-cols-2">
               <input required type="text" name="nombre-completo" autocomplete="off" placeholder="Nombre completo" class="p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 mr-1 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
               <input required type="email" name="email" autocomplete="off" placeholder="Correo electrónico" class="p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 ml-1 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
               <input required type="text" name="asunto" autocomplete="off" placeholder="Asunto" class="col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
-              <textarea required name="message" autocomplete="off" placeholder="Mensaje..." class="resize-none col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300" rows="5"></textarea>
+              <textarea required name="message" autocomplete="off" placeholder="Mensaje..." class="block resize-none col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300" rows="5"></textarea>
               <input type="submit" value="Enviar mensaje" class="text-slate-100 hover:cursor-pointer p-5 border-solid border-blue-200 border-2 m-auto rounded-2xl col-span-2 hover:border-blue-400 hover:transition-colors hover:duration-300">
             </div>
           </form>

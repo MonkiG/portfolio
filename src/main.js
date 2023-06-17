@@ -1,7 +1,6 @@
 import './../style.css'
-import { addCurrentYearToFooter, addAboutMeData, addReposToProjectsSection } from './dom'
+import { addCurrentYearToFooter, addAboutMeData } from './dom'
 
 addCurrentYearToFooter()
-addReposToProjectsSection()
 addAboutMeData()
 // fixHeader()
