@@ -1,8 +1,8 @@
 import { Octokit } from 'https://esm.sh/octokit'
-
+import { apiKey } from './settings'
 export default async function useRepos () {
   const octokit = new Octokit({
-    auth: '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'
+    auth: apiKey
   })
 
   const repos = await octokit.request('GET /user/repos', {
