@@ -9,8 +9,8 @@
    <body> 
     <div id="app" class="bg-gradient-to-tr from-[#16162e] via-[#220934]  to-[#37003b]">
       <header class="flex items-center w-full h-[78px] z-50">
-        <nav class="flex justify-between w-full items-center mx-20">
-          <h2 class="font-bold text-2xl text-slate-300 hover:text-slate-100 hidden sm:block"><a href="/">MonkiDev</a></h2>
+        <nav class="flex justify-between w-full items-center mx-10 lg:mx-20">
+          <h2 class="font-bold text-2xl text-slate-300 hover:text-slate-100 sm:block"><a href="/">MonkiDev</a></h2>
           <section class="hidden lg:block p-5">
             <ul class="flex">
               <li><a href='/' class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500 hover:cursor-pointer">Home</a></li>
@@ -42,53 +42,53 @@
         </nav>
       </header>
       <main id="main-content" class="">
-        <section class="flex justify-between p-5 mx-16 relative">
-          <div class="my-10">
-              <h1 class="text-7xl text-slate-300">Bring your idea, <br/> I'll handle the rest.</h1>
-              <p class="text-2xl my-10 text-slate-400">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
-              <a href="#contact-me" class="p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">Contact me</a>
+        <section class="flex justify-between mx-10 lg:p-5  lg:mx-16 relative">
+          <div class="my-5 lg:my-10">
+              <h1 class=" text-4xl md:text-5xl lg:text-7xl text-slate-300">Bring your idea, <br/> I'll handle the rest.</h1>
+              <p class=" text-base md:text-xl lg:text-2xl my-10 text-slate-400">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
+              <a href="#contact-me" class=" text-xs md:text-base lg:text-lg p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">Contact me</a>
           </div>
           <img src="./html2.png" class="hidden xl:block xl:right-16 xl:h-3/4 2xl:block 2xl:right-64 2xl:h-3/4 w-1/5 absolute 2xl:top-24" alt="MonkiDev hero-logo">
         </section>
 
         <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
 
-        <section class="p-5 m-16" id="projects">
-          <h2 class="text-3xl text-slate-100 text-center lg:text-left">Projects</h2>
-          <ul class="grid grid-cols-1 my-2 lg:grid-cols-2">
-            <li class="m-5 transition-all duration-500 hover:scale-110 w-1/2 place-self-center lg:place-self-start text-center lg:text-left">
+        <section class="m-10 lg:p-5 lg:m-16" id="projects">
+          <h2 class="text-lg md:text-xl lg:text-3xl text-slate-100 text-center lg:text-left">Projects</h2>
+          <ul class="flex justify-between lg:grid my-2 lg:grid-cols-2">
+            <li class="m-2 md:m-5 transition-all duration-500 hover:scale-110 md:w-1/2 md:place-self-center text-center lg:place-self-start lg:text-left">
               <a href="https://github.com/RamonHA13/CucStore" target="_blank">
-                <div class="flex items-center">
-                  <h3 class="text-slate-200 inline text-2xl mr-2">
+                <div class="flex flex-col items-center justify-center md:flex-row lg:justify-start">
+                  <h3 class="text-slate-200 inline text-sm md:text-lg lg:text-xl mr-2 my-1">
                     CucStore
                   </h3>
-                  <h4 class="bg-yellow-400 p-1 inline text-xs language rounded-xl font-bold">
+                  <h4 class="bg-yellow-400 p-1 my-1 inline text-xs language rounded-xl font-bold">
                     JavaScript
                   </h4>
                 </div>
                 <p class="text-slate-400 hidden md:block">Frontend aplicación móvil de venta de productos en el Centro Universitario de la Costa UDG</p>
               </a>
             </li>
-            <li class="m-5 transition-all duration-500 hover:scale-110 w-1/2 place-self-center text-center lg:place-self-end lg:text-right">
+            <li class="m-2 md:m-5 transition-all duration-500 hover:scale-110 md:w-1/2 md:place-self-center text-center lg:place-self-end lg:text-right">
               <a href="https://github.com/RamonHA13/CucStore-API" target="_blank">
-               <div class="flex items-center justify-end">
-                <h3 class="text-slate-200 inline text-2xl mr-2">
+               <div class="flex flex-col items-center justify-center md:flex-row lg:justify-end">
+                <h3 class="text-slate-200 inline text-sm md:text-lg lg:text-xl my-1 mr-2">
                   CucStore-Api
                 </h3>
-                <h4 class="bg-blue-600 p-1 inline text-xs language rounded-xl font-bold">
+                <h4 class="bg-blue-600 p-1 block lg:inline text-xs language rounded-xl my-1 font-bold">
                   TypeScript
                 </h4>
                </div>
                 <p class="text-slate-400 hidden md:block">Api para aplicación movil de venta de productos en el Centro Universitario de la Costa UDG</p>
               </a>
             </li>
-            <li class="m-5 transition-all duration-500 hover:scale-110 place-self-center lg:col-span-2 text-center">
+            <li class="m-2 md:m-5 md:w-1/2 transition-all duration-500 hover:scale-110 md:place-self-center lg:col-span-2 text-center">
               <a href="https://github.com/RamonHA13/TekashiRoll" target="_blank">
-                <div class="flex items-center">
-                  <h3 class="text-slate-200 inline text-2xl mr-2">
+                <div class="flex flex-col items-center justify-center md:flex-row">
+                  <h3 class="text-slate-200 inline text-sm md:text-lg lg:text-xl my-1 mr-2">
                     Tekashi-Roll
                   </h3>
-                  <h4 class="p-1 inline text-xs language rounded-xl font-bold bg-yellow-400">
+                  <h4 class="p-1 inline text-xs language rounded-xl font-bold bg-yellow-400 my-1">
                     JavaScript
                   </h4>
                 </div>
@@ -100,43 +100,43 @@
 
         <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
 
-        <section id="tecnologies" class="p-5 mx-16" >
-          <h2 class="text-3xl text-center text-slate-100">Tecnologies</h2>
-          <ul class="grid grid-cols-1 md:grid md:grid-cols-3 lg:flex lg:justify-around p-10">
+        <section id="tecnologies" class="m-10 lg:p-5 lg:mx-16" >
+          <h2 class="text-lg md:text-xl lg:text-3xl text-center text-slate-100">Tecnologies</h2>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid md:grid-cols-3 lg:flex lg:justify-around md:p-10">
             <li>
-              <figure class="transition-all hover:scale-150 duration-500 my-5">
-                <img src="./NodeJS.png" alt="NodeJs logo" class="m-auto">
-                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">NodeJs</figcaption>
+              <figure class="transition-all hover:scale-150 duration-500 my-2 md:my-5 lg:w-full">
+                <img src="./NodeJS.png" alt="NodeJs logo" class="m-auto md:scale-75">
+                <figcaption class="text-slate-300 text-center text-sm md:text-lg lg:text-xl p-1 font-bold">NodeJs</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500 my-5">
-                <img src="./TS.png" alt="TypeScript logo" class="m-auto">
-                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">TypeScript</figcaption>
+              <figure class="transition-all hover:scale-150 duration-500 my-2 md:my-5">
+                <img src="./TS.png" alt="TypeScript logo" class="m-auto scale-75">
+                <figcaption class="text-slate-300 text-center text-sm md:text-lg lg:text-xl p-1 font-bold">TypeScript</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500 my-5">
-                <img src="./React.png" alt="TypeScript logo" class="m-auto">
-                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">React</figcaption>
+              <figure class="transition-all hover:scale-150 duration-500 my-2 md:my-5">
+                <img src="./React.png" alt="TypeScript logo" class="m-auto scale-75">
+                <figcaption class="text-slate-300 text-center text-sm md:text-lg lg:text-xl p-1 font-bold">React</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500 my-5">
-                <img src="./React.png" alt="TypeScript logo" class="m-auto">
-                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">React Native</figcaption>
+              <figure class="transition-all hover:scale-150 duration-500 my-2 md:my-5">
+                <img src="./React.png" alt="TypeScript logo" class="m-auto scale-75">
+                <figcaption class="text-slate-300 text-center text-sm md:text-lg lg:text-xl p-1 font-bold">React Native</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500 my-5">
-                <img src="./MySql.png" alt="TypeScript logo" class="m-auto">
-                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">MySql</figcaption>
+              <figure class="transition-all hover:scale-150 duration-500 my-2 md:my-5">
+                <img src="./MySql.png" alt="TypeScript logo" class="m-auto scale-75">
+                <figcaption class="text-slate-300 text-center text-sm md:text-lg lg:text-xl p-1 font-bold">MySql</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="transition-all hover:scale-150 duration-500 my-5">
-                <img src="./MongoDB.png" alt="TypeScript logo" class="m-auto">
-                <figcaption class="text-slate-300 text-center text-lg p-1 font-bold">MongoDB</figcaption>
+              <figure class="transition-all hover:scale-150 duration-500 my-2 md:my-5">
+                <img src="./MongoDB.png" alt="TypeScript logo" class="m-auto scale-75">
+                <figcaption class="text-slate-300 text-center text-sm md:text-lg lg:text-xl p-1 font-bold">MongoDB</figcaption>
               </figure>
             </li>
           </ul>
@@ -146,16 +146,16 @@
 
         <section class="p-5 mx-16 about-me flex justify-between items-center" id="about-me">
           <div class="lg:w-1/2 inline-block">
-            <h2 class="text-3xl text-slate-100">About me</h2>
-            <p class="my-2 text-slate-400 text-xl">
+            <h2 class="text-lg md:text-xl lg:text-3xl text-slate-100">About me</h2>
+            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl">
               
             </p>
-            <p class="my-2 text-slate-400 text-xl">
+            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl">
               Soy un desarrollador web con una sólida base en tecnologías como HTML, CSS y JavaScript (<span class="font-bold underline"><a href="#projects">proyectos</a></span>). Cuento con experiencia en la creación de aplicaciones
               web modernas y atractivas. 
               Me considero una persona autodidacta que le gusta aprender nuevas tecnologías y mantenerme actualizado con las últimas tendencias en el campo del desarrollo web.
             </p>
-            <p class="my-2 text-slate-400 text-xl">
+            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl">
               Mis pasatiempos favoritos son: cocinar, escuchar música, ver peliculas y series, ver y jugar fútbol y aprender sobre ciencia y tecnología.
             </p>
             
@@ -167,14 +167,14 @@
         <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
 
         <section class="p-5 mx-16" id="contact-me">
-          <h2 class="text-3xl  text-slate-100">Contact me</h2>
+          <h2 class="text-lg md:text-xl lg:text-3xl  text-slate-100">Contact me</h2>
           <form class="mt-1"  action="https://formspree.io/f/xgebglan" method="POST" >
             <div class="grid grid-cols-2">
               <input required type="text" name="nombre-completo" autocomplete="off" placeholder="Nombre completo" class="p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 mr-1 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
               <input required type="email" name="email" autocomplete="off" placeholder="Correo electrónico" class="p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 ml-1 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
               <input required type="text" name="asunto" autocomplete="off" placeholder="Asunto" class="col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
               <textarea required name="message" autocomplete="off" placeholder="Mensaje..." class="block resize-none col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300" rows="5"></textarea>
-              <input type="submit" value="Enviar mensaje" class="text-slate-100 hover:cursor-pointer p-5 border-solid border-blue-200 border-2 m-auto rounded-2xl col-span-2 hover:border-blue-400 hover:transition-colors hover:duration-300">
+              <input type="submit" value="Enviar mensaje" class="text-xs md:text-base lg:text-lg p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">
             </div>
           </form>
         </section>
