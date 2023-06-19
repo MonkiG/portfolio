@@ -14,9 +14,34 @@
           <button class="absolute right-0 m-2 md:m-4 w-5 h-5 button-close text-slate-400">
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#94a3b8' class="transition-all duration-500 scale-75 md:scale-90"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
           </button>
-          <nav>
-            <ul>
-              <li></li>
+          <nav class="h-full">
+            <ul class="h-full flex flex-col justify-around">
+              <section class="flex flex-col justify-center items-center sm:items-start">
+                <li class="menu-layout-items my-3">
+                  <a href='#app' aria-label="Go to the home screen" class="flex justify-start items-center text-lg px-5 text-slate-400 hover:text-gray-500 transition-all hover:text-2xl duration-500 hover:cursor-pointer"><span class="fa-solid fa-house inline-block text-2xl md:hidden sm:text-base"></span><span class="hidden sm:block mx-3">Home</span></a>
+                </li>
+                <li class="menu-layout-items my-3">
+                  <a href="#projects" aria-label="Go to projects section" class="flex justify-start items-center text-lg px-5 text-slate-400 hover:text-gray-500 transition-all hover:text-2xl duration-500"><span class="fa-solid fa-briefcase inline-block text-2xl md:hidden sm:text-base"></span><span class="hidden sm:block mx-3">Projects</span></a>
+                </li>
+                <li class="menu-layout-items my-3">
+                  <a href="#tecnologies" aria-label="Go to tecnologies section" class="flex justify-start items-center text-lg px-5 text-slate-400 hover:text-gray-500 transition-all hover:text-2xl duration-500"><span class="fa-solid fa-code inline-block text-2xl md:hidden sm:text-base"></span><span class="hidden sm:block mx-3">Tecnologies</span></a>
+                </li>
+                <li class="menu-layout-items my-3">
+                  <a href="#about-me" aria-label="Go to about me section" class="flex justify-start items-center text-lg px-5 text-slate-400 hover:text-gray-500 transition-all hover:text-2xl duration-500"><span class="fa-solid fa-mug-saucer inline-block text-2xl md:hidden sm:text-base"></span><span class="hidden sm:block mx-3">About me</span></a>
+                </li>
+              </section>
+              <section class="flex flex-col items-center md:flex-row md:justify-center ">
+                <li>
+                  <a aria-label="Go to my github profile" href="https://www.github.com/RamonHA13" target="_blank" class="mx-2 text-2xl text-slate-400 hover:text-gray-500 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-github my-3"></span></a>
+                </li>
+                <li>
+                  <a aria-label="Go to my linkedin profile" href="https://www.linkedin.com/in/ram%C3%B3n-antonio-hern%C3%A1ndez-amaral-a794a0279/" class="mx-2 text-2xl text-slate-400 hover:text-gray-500 transition-all hover:text-3xl duration-500" target="_blank"><span class="fa-brands fa-linkedin my-3"></span></a>
+                </li> 
+                <li>
+                  <a aria-label="Go to my twitter profile" href="https://twitter.com/ElMonkiG_" target="_blank" class="mx-2 text-2xl text-slate-400 hover:text-gray-500 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitter my-3"></span></a>
+                </li>
+                <li><a aria-label="Go to my twitch profile" href="https://www.twitch.tv/monkig" target="_blank" class="mx-2 text-2xl text-slate-400 hover:text-gray-500 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitch my-3"></span></a></li>
+              </section>
             </ul>
           </nav>
         </div>
