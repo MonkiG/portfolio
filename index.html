@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/icon" href="/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ramón Hernández projects portfolio">
     <title>MonkiDev</title>
   </head>
    <body> 
@@ -24,25 +25,25 @@
         <nav class="flex justify-between w-full items-center mx-10 lg:mx-20">
           <h2 class="font-bold text-2xl text-slate-300 hover:text-slate-100 sm:block"><a href="/">MonkiDev</a></h2>
           <section class="hidden lg:block p-5">
-            <ul class="flex">
-              <li><a href='/' class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500 hover:cursor-pointer">Home</a></li>
-              <li><a href="#projects" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">Projects</a></li>
-              <li><a href="#tecnologies" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">Tecnologies</a></li>
-              <li><a href="#about-me"  class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">About me</a></li>
+            <ul class="flex edit-language">
+              <li><a href='/' aria-label="Go to the home screen" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500 hover:cursor-pointer">Home</a></li>
+              <li><a href="#projects" aria-label="Go to projects section" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">Projects</a></li>
+              <li><a href="#tecnologies" aria-label="Go to tecnologies section" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">Tecnologies</a></li>
+              <li><a href="#about-me" aria-label="Go to about me section" class="text-lg px-5 text-slate-400 hover:text-slate-100 transition-all hover:text-2xl duration-500">About me</a></li>
             </ul>
           </section>
           <section class="hidden lg:block p-5">
             <ul class="flex">
               <li>
-                <a href="https://www.github.com/RamonHA13" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500 "><span class="fa-brands fa-github"></span></a>
+                <a aria-label="Go to my github profile" href="https://www.github.com/RamonHA13" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500 "><span class="fa-brands fa-github"></span></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/ram%C3%B3n-antonio-hern%C3%A1ndez-amaral-a794a0279/" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500" target="_blank"><span class="fa-brands fa-linkedin"></span></a>
+                <a aria-label="Go to my linkedin profile" href="https://www.linkedin.com/in/ram%C3%B3n-antonio-hern%C3%A1ndez-amaral-a794a0279/" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500" target="_blank"><span class="fa-brands fa-linkedin"></span></a>
               </li> 
               <li>
-                <a href="https://twitter.com/ElMonkiG_" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitter"></span></a>
+                <a aria-label="Go to my twitter profile" href="https://twitter.com/ElMonkiG_" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitter"></span></a>
               </li>
-              <li><a href="https://www.twitch.tv/monkig" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitch"></span></a></li>
+              <li><a aria-label="Go to my twitch profile" href="https://www.twitch.tv/monkig" target="_blank" class="text-2xl px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-3xl duration-500"><span class="fa-brands fa-twitch"></span></a></li>
               <!-- <li class="text-lg px-2 text-slate-400 hover:text-slate-100 transition-all hover:text-xl duration-500">
                 <select name="languageSelect" id="" class="bg-transparent appearance-none outline-none overflow-y-hidden">
                   <option value="en-us" default class="text-black">es-mx</option>  
@@ -55,13 +56,13 @@
         <button class="text-slate-400 lg:hidden text-xl md:text-2xl mx-10 lg:mx-16 transition-all" id="bars"><span class="fa-solid fa-bars"></span></button>
       </header>
       <main id="main-content" class="">
-        <section class="flex justify-between mx-10 lg:p-5  lg:mx-16 relative">
-          <div class="my-5 lg:my-10">
+        <section class="mx-10 lg:p-5 lg:mx-16 relative">
+          <div class="my-5 lg:my-10 edit-language">
               <h1 class=" text-4xl md:text-5xl lg:text-7xl text-slate-300">Bring your idea, <br/> I'll handle the rest.</h1>
-              <p class=" text-base md:text-xl lg:text-2xl my-10 text-slate-400">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
+              <p class=" text-base sm:text-sm md:text-xl lg:text-2xl my-10 text-slate-400">Soluciones tecnológicas en el desarrollo web, <br> proporcionando soluciones personalizadas que hacen brillar tu marca.</p>
               <a href="#contact-me" class=" text-xs md:text-base lg:text-lg p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">Contact me</a>
           </div>
-          <img src="./html2.png" class="hidden xl:block xl:right-16 xl:h-3/4 2xl:block 2xl:right-64 2xl:h-3/4 w-1/5 absolute 2xl:top-24" alt="MonkiDev hero-logo">
+          <img src="./html2 1.png" class="hidden absolute w-1/5 top-11 sm:block sm:right-16 sm:top-0 md:right-11 lg:right-0 lg:top-24 xl:right-11 " alt="MonkiDev hero-logo">
         </section>
 
         <hr class="mx-auto my-3 w-1/12 border-t-8 border-[#7d1184] border-dotted ">
@@ -79,7 +80,7 @@
                     JavaScript
                   </h4>
                 </div>
-                <p class="text-slate-400 hidden md:block">Frontend aplicación móvil de venta de productos en el Centro Universitario de la Costa UDG</p>
+                <p class="text-slate-400 hidden md:block edit-language">Frontend aplicación móvil de venta de productos en el Centro Universitario de la Costa UDG</p>
               </a>
             </li>
             <li class="m-2 md:m-5 transition-all duration-500 hover:scale-110 md:w-1/2 md:place-self-center text-center lg:place-self-end lg:text-right">
@@ -88,11 +89,11 @@
                 <h3 class="text-slate-200 inline text-sm md:text-lg lg:text-xl my-1 mr-2">
                   CucStore-Api
                 </h3>
-                <h4 class="bg-blue-600 p-1 block lg:inline text-xs language rounded-xl my-1 font-bold">
+                <h4 class="bg-blue-600 text-[#F2F2F2] p-1 block lg:inline text-xs language rounded-xl my-1 font-bold">
                   TypeScript
                 </h4>
                </div>
-                <p class="text-slate-400 hidden md:block">Api para aplicación movil de venta de productos en el Centro Universitario de la Costa UDG</p>
+                <p class="text-slate-400 hidden md:block edit-language">Api para aplicación movil de venta de productos en el Centro Universitario de la Costa UDG</p>
               </a>
             </li>
             <li class="m-2 md:m-5 md:w-1/2 transition-all duration-500 hover:scale-110 md:place-self-center lg:col-span-2 text-center">
@@ -105,7 +106,7 @@
                     JavaScript
                   </h4>
                 </div>
-                <p class="text-slate-400 hidden md:block">Proyecto de universidad Cuc UDG</p>
+                <p class="text-slate-400 hidden md:block edit-language">Proyecto de universidad Cuc UDG</p>
               </a>
             </li>
           </ul>
@@ -160,15 +161,15 @@
         <section class="p-5 mx-16 about-me flex justify-between items-center" id="about-me">
           <div class="lg:w-1/2 inline-block">
             <h2 class="text-lg md:text-xl lg:text-3xl text-slate-100">About me</h2>
-            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl">
+            <p class=" my-2 text-slate-400 text-sm md:text-lg lg:text-xl">
               
             </p>
-            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl">
+            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl edit-language">
               Soy un desarrollador web con una sólida base en tecnologías como HTML, CSS y JavaScript (<span class="font-bold underline"><a href="#projects">proyectos</a></span>). Cuento con experiencia en la creación de aplicaciones
               web modernas y atractivas. 
               Me considero una persona autodidacta que le gusta aprender nuevas tecnologías y mantenerme actualizado con las últimas tendencias en el campo del desarrollo web.
             </p>
-            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl">
+            <p class="my-2 text-slate-400 text-sm md:text-lg lg:text-xl edit-language">
               Mis pasatiempos favoritos son: cocinar, escuchar música, ver peliculas y series, ver y jugar fútbol y aprender sobre ciencia y tecnología.
             </p>
             
@@ -187,7 +188,7 @@
               <input required type="email" name="email" autocomplete="off" placeholder="Correo electrónico" class="p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 ml-1 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
               <input required type="text" name="asunto" autocomplete="off" placeholder="Asunto" class="col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300">
               <textarea required name="message" autocomplete="off" placeholder="Mensaje..." class="block resize-none col-span-2 p-2 rounded-2xl border-solid border-blue-100 border-2 my-4 focus:border-blue-400 focus:outline-none focus:transition-colors focus:duration-500 bg-gray-300" rows="5"></textarea>
-              <input type="submit" value="Enviar mensaje" class="text-xs md:text-base lg:text-lg p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">
+              <input type="submit" value="Enviar mensaje" class="col-span-2 text-xs md:text-base lg:text-lg p-3 border-solid border-blue-200 border-2 m-auto rounded-2xl text-slate-100 hover:border-blue-400 hover:transition-colors hover:duration-300">
             </div>
           </form>
         </section>
