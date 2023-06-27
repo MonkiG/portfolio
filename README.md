@@ -2,6 +2,12 @@
 
 ## To-do
 - Correct language irregularities
-- Change projects section layout
+- Add "searching for job"
+- Add soft skills section
+- Change projects section layout (Add tecnologies logo's and anchor tags to code and website)
+- Change "contact-me" section layout
 - Add missing tecnologies
 - Add footer menu
+- Add website url to projects
+- Add CV
+- Add mail to avoid form if needed
