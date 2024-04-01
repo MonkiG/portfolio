@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Monki Projects",
+        "description": "Web app that show small projects made with vanilla (plain) JavaScript (TypeScript) created to practice and maintain a programming routine.",
+        "finished": "progress",
+        "technologies": [{
+            "name": "Web components", 
+            "imgSrc": ""
+        }],
+        "platforms": [{
+            "name": "web",
+            "link": "https://monki-projects.vercel.app/",
+            "imgSrc": ""
+        },{
+            "name": "Git hub",
+            "link": "https://github.com/MonkiG/MonkiProjects",
+            "imgSrc": ""
+        }]
+    },
+    {
+        "name": "Tekashi Roll",
+        "description": "Web application built with Next.js and Supabase for a restaurant in Altavela, Nay. It helps with the management of takeout and table orders.",
+        "finished": "progress",
+        "technologies":[{
+            "name": "NextJs",
+            "imgSrc": ""
+        },{
+            "name": "Supabase",
+            "imgSrc": ""
+        },{
+            "name": "Tailwind Css",
+            "imgSrc": ""
+        }],
+        "platforms":[{
+            "name": "web",
+            "imgSrc": "",
+            "link": ""
+        }]
+    }
+]

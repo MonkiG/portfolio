@@ -1,16 +1,31 @@
 ---
-
+import Header from '../components/Header.astro';
+import AboutMeSection from '../components/sections/AboutMeSection.astro';
+import IndexSection from '../components/sections/IndexSection.astro';
+import ProjectsSection from '../components/sections/ProjectsSection.astro';
+import Technologies from '../components/sections/Technologies.astro';
 ---
-
-<html lang="en">
+<html lang='en'>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/icon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>MonkiG</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="h-screen bg-[#e0dfdd] box-border">
+		<Header></Header> 
+		<main class="h-full my-24">
+			<IndexSection />
+			<!-- <Technologies/> -->
+			<ProjectsSection/>
+			<AboutMeSection/>
+		</main>
 	</body>
 </html>
+
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+</style>

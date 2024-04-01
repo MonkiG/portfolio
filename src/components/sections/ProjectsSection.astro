@@ -1,0 +1,54 @@
+---
+import type { Project } from "../../types";
+import Maincontainer from "../MainContainer.astro";
+import Projects from './../../../lib/projects.json'
+
+const projects: Project[] = Projects as Project[]
+---
+
+<Maincontainer id="projects" className="h-3/4 mx-44 ">
+
+    <h2 class="text-4xl text-center mb-7">Selected Projects</h2>
+    <div class=`${projects.length > 3 ? 'grid grid-cols-2 gap-x-10 gap-y-5' : ''}`>
+        {projects.map(project => (
+            <article class="border-b-2 border-gray-400 grow-0 mt-5">
+                <h3 class="text-2xl mb-5">{project.name}</h3>
+                <p>{project.description}</p>
+                <div class='mt-5 mb-3 flex justify-between text-white text-sm'>
+                    <ul class="flex justify-between items-center">
+                        {project.technologies.map(tech => <li class="mr-2 uppercase bg-black p-1 rounded-sm ">{tech.name}</li>)}
+                    </ul>   
+                    <ul class="flex justify-between items-center">
+                        {project.platforms.map(platform => (<li><a href={`${platform.link}`} target="_blank" class="mr-2 uppercase bg-black p-1 rounded-sm ">{platform.name}</a></li>))}
+                    </ul> 
+                </div>    
+            </article>
+        ))}
+    </div>
+
+</Maincontainer>
+<!-- <script>
+import { $$, $ } from "../../../lib/query";
+
+    const $$projectsDescriptions = $$('p', $('#projects'))
+    const maxLength = 231
+
+    $$projectsDescriptions.forEach((description: HTMLParagraphElement) => {
+        const projectText = description.innerText
+        const projectLength = projectText.length
+        let truncatedText = ''
+        if (projectLength > maxLength) {
+            truncatedText = projectText.slice(maxLength - 1, -1) + ' ...'; 
+            description.innerHTML += `<span><button class="underline">...</button</span>` ;
+        }
+        
+       setTimeout(() => {
+            const button = $('span', description)
+            
+            button && button.addEventListener('click', function () {
+                description.innerText +=  truncatedText
+                this.remove()
+            })
+       }, 100)
+    })
+</script> -->
