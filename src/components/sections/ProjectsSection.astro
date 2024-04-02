@@ -19,7 +19,7 @@ const projects: Project[] = Projects as Project[]
                         {project.technologies.map(tech => <li class="mr-2 uppercase bg-gray-300 p-1 rounded-sm ">{tech.name}</li>)}
                     </ul>   
                     <ul class="flex justify-between items-center">
-                        {project.platforms.map(platform => (<li><a href={`${platform.link}`} target="_blank" class="mr-2 uppercase bg-gray-300 p-1 rounded-sm ">{platform.name}</a></li>))}
+                        {project.platforms.map(platform => (<li><a href={`${platform.link !== '' ? platform.link : '#'}`} target="_blank" class="mr-2 uppercase bg-gray-300 p-1 rounded-sm ">{platform.name}</a></li>))}
                     </ul> 
                 </div>    
             </article>
