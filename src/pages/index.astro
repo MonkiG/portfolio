@@ -1,9 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import AboutMeSection from '../components/sections/AboutMeSection.astro';
-import IndexSection from '../components/sections/IndexSection.astro';
 import ProjectsSection from '../components/sections/ProjectsSection.astro';
-import Technologies from '../components/sections/Technologies.astro';
+import StackSection from '../components/sections/StackSection.astro';
 ---
 <html lang='en'>
 	<head>
@@ -13,13 +12,11 @@ import Technologies from '../components/sections/Technologies.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>MonkiG</title>
 	</head>
-	<body class="h-screen bg-[#e0dfdd] box-border">
+	<body class="h-screen bg-[#e0dfdd] box-border text-[#1c274c]">
 		<Header></Header> 
-		<main class="h-full my-24">
-			<IndexSection />
-			<!-- <Technologies/> -->
-			<ProjectsSection/>
+		<main class="h-full">
 			<AboutMeSection/>
+			<ProjectsSection/>
 		</main>
 	</body>
 </html>
