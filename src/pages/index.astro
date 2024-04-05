@@ -13,9 +13,9 @@ import ProjectsSection from '../components/sections/ProjectsSection.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>MonkiG</title>
 	</head>
-	<body class="h-screen bg-[#e0dfdd] box-border">
+	<body class="h-screen bg-[#e0dfdd] box-border relative">
 		<Header/>
-		<main class="h-full">
+		<main class="h-full max-w-[1030px] mx-auto">
 			<AboutMeSection/>
 			<ProjectsSection/>
 		</main>
@@ -27,3 +27,11 @@ import ProjectsSection from '../components/sections/ProjectsSection.astro';
 		scroll-behavior: smooth;
 	}
 </style>
+
+<script>
+import darkMode from "../utils/darkMode";
+import handleSideBar from "./handleSideBar";
+
+	darkMode()
+	handleSideBar()
+</script>
