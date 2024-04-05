@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Web components",
+        "link": "https://www.webcomponents.org/"
+    }, 
+    {
+        "name": "NextJs",
+        "link": "https://nextjs.org/"
+    },
+    {
+        "name": "React",
+        "link": "https://react.dev/"
+    },
+    {
+        "name": "Tailwind Css",
+        "link": "https://tailwindcss.com/"
+    },
+    {
+        "name": "Supabase",
+        "link": "https://supabase.com/"
+    }
+]
