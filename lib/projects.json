@@ -16,25 +16,5 @@
             "link": "https://github.com/MonkiG/MonkiProjects",
             "imgSrc": ""
         }]
-    },
-    {
-        "name": "Tekashi Roll",
-        "description": "Web application built with Next.js and Supabase for a restaurant in Altavela, Nay. It helps with the management of takeout and table orders.",
-        "finished": "progress",
-        "technologies":[{
-            "name": "NextJs",
-            "imgSrc": ""
-        },{
-            "name": "Supabase",
-            "imgSrc": ""
-        },{
-            "name": "Tailwind Css",
-            "imgSrc": ""
-        }],
-        "platforms":[{
-            "name": "web",
-            "imgSrc": "",
-            "link": ""
-        }]
-    }
+    }    
 ]

@@ -5,6 +5,8 @@ import React from './icons/React.astro'
 import Supabase from './icons/Supabase.astro'
 import Tailwind from './icons/Tailwind.astro'
 import WebComponents from './icons/WebComponents.astro'
+import Ts from './icons/Ts.astro'
+
 interface Props {
     svgName: string
 }
@@ -14,7 +16,7 @@ const {svgName} = Astro.props
 
 {svgName && 
     (svgName === 'Web components' && <WebComponents />) || 
-    (svgName === 'NextJs' && <NextJs />) ||
+    (svgName === 'TypeScript' && <Ts />) ||
     (svgName === 'React' && <React />) || 
     (svgName === 'Tailwind Css' && <Tailwind />) ||
     (svgName === 'Supabase' && <Supabase />)
