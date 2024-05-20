@@ -10,12 +10,20 @@ interface Props {
         <img src="/images/me.jpeg" alt="Ramón Hernández foto" class="h-[40px] w-[40px] rounded-full hover:animate-wiggle hover:animate-infinite hover:animate-duration-500">
         <h2>(a.k.a MonkiG)</h2> 
     </section>
-    <button data-rol="side" class="w-1/12 md:hidden"><img src="/burger.svg" alt="" ></button>
-    <section class="hidden md:flex items-center gap-5">
-        <ul class="flex gap-4 items-center">
-            <li><a href="https://www.linkedin.com/in/ram%C3%B3n-hern%C3%A1ndez-a794a0279/" target="_blank" class="px-2 border-b-2 border-solid border-gray-300 hover:border-gray-500 transition-colors duration-500 py-[2px]">LinkedIn</a></li>
-            <li><a href="https://github.com/MonkiG" target="_blank" class="px-2 border-b-2 border-solid border-gray-300 hover:border-gray-500 transition-colors duration-500 py-[2px]">GitHub</a></li>
-            <li><a href="https://twitter.com/ElMonkiG_" target="_blank" class="px-2 border-b-2 border-solid border-gray-300 hover:border-gray-500 transition-colors duration-500 py-[2px]">Twitter</a></li>
-        </ul>
-    </section>
-</header>
+    <!-- <button data-rol="side" class="w-[5%] md:hidden"><img src="/burger.svg" alt="" ></button> -->
+
+    <ul class="hidden md:flex gap-4 items-center">
+        <li><a href="https://www.linkedin.com/in/ram%C3%B3n-hern%C3%A1ndez-a794a0279/" target="_blank" class="px-2 border-b-2 border-solid border-gray-300 hover:border-gray-500 transition-colors duration-500 py-[2px]">LinkedIn</a></li>
+        <li><a href="https://github.com/MonkiG" target="_blank" class="px-2 border-b-2 border-solid border-gray-300 hover:border-gray-500 transition-colors duration-500 py-[2px]">GitHub</a></li>
+        <li><a href="https://twitter.com/ElMonkiG_" target="_blank" class="px-2 border-b-2 border-solid border-gray-300 hover:border-gray-500 transition-colors duration-500 py-[2px]">Twitter</a></li>
+    </ul>
+
+
+    
+    <ul class="md:hidden w-1/2 flex justify-end gap-2">
+        <li class="flex justify-end w-8 sm:w-1/12"><a href="https://www.linkedin.com/in/ram%C3%B3n-hern%C3%A1ndez-a794a0279/" target="_blank"><img src="social/linkedin.svg"/></a></li>
+        <li class="flex justify-end w-8 sm:w-1/12"><a href="https://github.com/MonkiG" target="_blank"><img src="social/GithubSvg.svg"/></a></li>
+        <li class="flex justify-end w-8 sm:w-1/12"><a href="https://twitter.com/ElMonkiG_" target="_blank"><img src="social/twitter.svg"/></a></li>
+    </ul>
+    
+</header>   
