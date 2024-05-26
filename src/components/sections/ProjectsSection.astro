@@ -1,8 +1,25 @@
 ---
-import type { Project } from "../../types";
+import { ProjectStatus, type Project } from "../../types";
 import Maincontainer from "../MainContainer.astro";
 import Projects from './../../../lib/projects.json'
 
+const projectStatusDictionary: Record<string, {
+    dict: string,
+    desc: string
+}> = {
+    "developing": {
+        dict: "In development",
+        desc: "Project that I'm currently working on"
+    },
+    "maintenance": {
+        dict: "In maintenance",
+        desc: "Project that is \"done\" and I'm maintaining"
+    },
+    "hold":{
+        dict: "On hold",
+        desc: "Project that is in pause for personal reasons"
+    }
+}
 const projects: Project[] = Projects as Project[]
 ---
 
@@ -11,14 +28,19 @@ const projects: Project[] = Projects as Project[]
     <div class=`${projects.length > 3 ? 'grid grid-cols-2 gap-x-10 gap-y-5' : ''}`>
         {projects.map(project => (
             <article class="border-b-2 border-gray-300 grow-0 mt-5">
-                <h3 class="text-2xl mb-5">{project.name}</h3>
+                <header class="flex justify-between mb-5">
+                    <h3 class="text-2xl">{project.name}</h3>
+                    <div class="flex gap-2">
+                        {project.status.map(x => <span title={projectStatusDictionary[x].desc} class="border-b-2 border-gray-300 px-2 flex items-center">{projectStatusDictionary[x].dict ?? ''}</span>)}
+                    </div>
+                </header>
                 <p>{project.description}</p>
                 <div class='mt-5 mb-3 flex justify-between text-sm'>
                     <ul class="flex justify-between items-center">
-                        {project.technologies.map(tech => <li class="mr-2 uppercase bg-gray-300 p-1 rounded-sm ">{tech.name}</li>)}
+                        {project.technologies.map(tech => <li class="mr-2 bg-gray-300 p-1 rounded-sm ">{tech.name}</li>)}
                     </ul>   
                     <ul class="flex justify-between items-center">
-                        {project.platforms.map(platform => (<li><a href={`${platform.link !== '' ? platform.link : '#'}`} target="_blank" class="mr-2 uppercase transition-colors duration-500  bg-gray-300 hover:bg-gray-400 p-1 rounded-sm ">{platform.name}</a></li>))}
+                        {project.platforms.map(platform => (<li><a href={`${platform.link !== '' ? platform.link : '#'}`} target="_blank" class="mr-2 transition-colors duration-500  bg-gray-300 hover:bg-gray-400 p-1 rounded-sm ">{platform.name}</a></li>))}
                     </ul> 
                 </div>    
             </article>

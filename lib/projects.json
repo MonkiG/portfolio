@@ -2,19 +2,84 @@
     {
         "name": "Monki Projects",
         "description": "Web app that show small projects made with vanilla (plain) JavaScript (TypeScript) created to practice and maintain a programming routine.",
-        "finished": "progress",
-        "technologies": [{
-            "name": "Web components", 
-            "imgSrc": ""
-        }],
-        "platforms": [{
-            "name": "web",
-            "link": "https://monki-projects.vercel.app/",
-            "imgSrc": ""
-        },{
-            "name": "Git hub",
-            "link": "https://github.com/MonkiG/MonkiProjects",
-            "imgSrc": ""
-        }]
-    }    
+        "status": ["hold", "maintenance"],
+        "technologies": [
+            {
+                "name": "TypeScript", 
+                "imgSrc": ""
+            },
+            {
+                "name": "Web Components", 
+                "imgSrc": ""
+            }
+        ],
+        "platforms": [
+            {
+                "name": "Web",
+                "link": "https://monki-projects.vercel.app/",
+                "imgSrc": ""
+            },
+            {
+                "name": "GitHub",
+                "link": "https://github.com/MonkiG/MonkiProjects",
+                "imgSrc": ""
+            }
+        ]
+    },
+    {
+        "name": "MnkiUrl",
+        "description": "Full stack url shortener application made it in order to consolidate my knowledge in NodeJs with TypeScript and React",
+        "status": ["developing"],
+        "technologies": [
+            {
+                "name": "TypeScript", 
+                "imgSrc": ""
+            },
+            {
+                "name": "NodeJs", 
+                "imgSrc": ""
+            },
+            {
+                "name": "PostgreSql", 
+                "imgSrc": ""
+            },
+            {
+                "name": "ExpressJs", 
+                "imgSrc": ""
+            },
+            {
+                "name": "React", 
+                "imgSrc": ""
+            }
+        ],
+        "platforms": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/MonkiG/mnki-url",
+                "imgSrc": ""
+            }
+        ]
+    }, 
+    {
+        "name": "OrderDetector",
+        "description": "Scholar project that detects products, table and waiter using voice detection, converts the voice into text, filters the products, and sends them to a Supabase database, linking it to current web applications using Supabase Realtime for the Sushi restaurant 'Tekashi Roll'.",
+        "status": ["hold"],
+        "technologies":[
+            {
+                "name": "Python",
+                "imgSrc": ""
+            },
+            {
+                "name": "Supabase",
+                "imgSrc": ""
+            }
+        ],
+        "platforms": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/MonkiG/OrderDetector/tree/google",
+                "imgSrc": ""
+            }
+        ]
+    }        
 ]

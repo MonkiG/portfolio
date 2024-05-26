@@ -1,0 +1,22 @@
+[
+    {
+        "name": "",
+        "description": "",
+        "status": [""],
+        "technologies":[{
+            "name": "NextJs",
+            "imgSrc": ""
+        },{
+            "name": "Supabase",
+            "imgSrc": ""
+        },{
+            "name": "Tailwind Css",
+            "imgSrc": ""
+        }],
+        "platforms":[{
+            "name": "web",
+            "imgSrc": "",
+            "link": ""
+        }]
+    }
+]

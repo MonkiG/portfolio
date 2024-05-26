@@ -1,4 +1,8 @@
-export type projectStatus = 'soon' | 'progress' | 'finished'
+export enum ProjectStatus {
+  Developing = 'developing',
+  Maintenance = 'maintenance',
+  Hold = 'hold'
+}
 
 export interface Items {
   name: string
@@ -9,7 +13,7 @@ export interface Platform extends Items {
 }
 export interface Project {
   name: string
-  finished: projectStatus
+  status: ProjectStatus[]
   description: string
   technologies: Items[]
   platforms: Platform[]
