@@ -61,6 +61,27 @@
         ]
     }, 
     {
+        "name": "MnkiStorage",
+        "description": "Library created for educational purposes. It is designed to extend the features provided by \"LocalStorage\" and \"SessionStorage\", making data handling and storage in web applications easier.",
+        "status": ["developing", "maintenance"],
+        "technologies": [
+            {
+                "name": "TypeScript",
+                "imgSrc": ""
+            }
+        ],
+        "platforms": [
+            {
+                "name": "npm",
+                "link": "https://www.npmjs.com/package/@monkig/mnki-storage"
+            },
+            {
+                "name": "GitHub",
+                "link": "https://github.com/MonkiG/mnki-storage"
+            }
+        ]
+    },
+    {
         "name": "OrderDetector",
         "description": "Scholar project that detects products, table and waiter using voice detection, converts the voice into text, filters the products, and sends them to a Supabase database, linking it to current web applications using Supabase Realtime for the Sushi restaurant 'Tekashi Roll'.",
         "status": ["hold"],
