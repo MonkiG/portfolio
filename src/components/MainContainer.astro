@@ -6,6 +6,6 @@ interface Props {
 
 const { className , id} = Astro.props
 ---
-<section id={id && `${id}`} class=`max-h-full flex flex-col ${className}`>
+<section id={id && `${id}`} class=`flex flex-col ${className}`>
     <slot/>
 </section>
