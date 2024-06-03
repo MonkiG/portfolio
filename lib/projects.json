@@ -1,28 +1,44 @@
 [
     {
-        "name": "Monki Projects",
-        "description": "Web app that show small projects made with vanilla (plain) JavaScript (TypeScript) created to practice and maintain a programming routine.",
-        "status": ["hold", "maintenance"],
-        "technologies": [
+        "name": "MnkiToast",
+        "description": "Personal opinionated standalone toast component built in web components",
+        "status": ["developing"],
+        "technologies":[
             {
-                "name": "TypeScript", 
+                "name": "JavaScript",
                 "imgSrc": ""
             },
             {
-                "name": "Web Components", 
+                "name": "Web Components",
                 "imgSrc": ""
             }
         ],
         "platforms": [
             {
-                "name": "Web",
-                "link": "https://monki-projects.vercel.app/",
+                "name": "GitHub",
+                "link": "https://github.com/MonkiG/mnki-toast",
                 "imgSrc": ""
+            }
+        ]
+    },
+    {
+        "name": "MnkiStorage",
+        "description": "Library created for educational purposes. It is designed to extend the features provided by \"LocalStorage\" and \"SessionStorage\", making data handling and storage in web applications easier.",
+        "status": ["developing", "maintenance"],
+        "technologies": [
+            {
+                "name": "TypeScript",
+                "imgSrc": ""
+            }
+        ],
+        "platforms": [
+            {
+                "name": "npm",
+                "link": "https://www.npmjs.com/package/@monkig/mnki-storage"
             },
             {
                 "name": "GitHub",
-                "link": "https://github.com/MonkiG/MonkiProjects",
-                "imgSrc": ""
+                "link": "https://github.com/MonkiG/mnki-storage"
             }
         ]
     },
@@ -55,48 +71,32 @@
                 "imgSrc": ""
             }
         ]
-    }, 
-    {
-        "name": "MnkiStorage",
-        "description": "Library created for educational purposes. It is designed to extend the features provided by \"LocalStorage\" and \"SessionStorage\", making data handling and storage in web applications easier.",
-        "status": ["developing", "maintenance"],
-        "technologies": [
-            {
-                "name": "TypeScript",
-                "imgSrc": ""
-            }
-        ],
-        "platforms": [
-            {
-                "name": "npm",
-                "link": "https://www.npmjs.com/package/@monkig/mnki-storage"
-            },
-            {
-                "name": "GitHub",
-                "link": "https://github.com/MonkiG/mnki-storage"
-            }
-        ]
     },
     {
-        "name": "OrderDetector",
-        "description": "Scholar project that detects products, table and waiter using voice detection, converts the voice into text, filters the products, and sends them to a Supabase database, linking it to current web applications using Supabase Realtime for the Sushi restaurant 'Tekashi Roll'.",
-        "status": ["hold"],
-        "technologies":[
+        "name": "Monki Projects",
+        "description": "Web app that show small projects made with vanilla (plain) JavaScript (TypeScript) created to practice and maintain a programming routine.",
+        "status": ["hold", "maintenance"],
+        "technologies": [
             {
-                "name": "Python",
+                "name": "TypeScript", 
                 "imgSrc": ""
             },
             {
-                "name": "Supabase",
+                "name": "Web Components", 
                 "imgSrc": ""
             }
         ],
         "platforms": [
             {
+                "name": "Web",
+                "link": "https://monki-projects.vercel.app/",
+                "imgSrc": ""
+            },
+            {
                 "name": "GitHub",
-                "link": "https://github.com/MonkiG/OrderDetector/tree/google",
+                "link": "https://github.com/MonkiG/MonkiProjects",
                 "imgSrc": ""
             }
         ]
-    }        
+    }
 ]
