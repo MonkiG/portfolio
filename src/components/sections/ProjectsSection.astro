@@ -27,7 +27,7 @@ const projects: Project[] = Projects as Project[]
     <h2 class="text-4xl text-center my-7">Selected Projects</h2>
     <div class=`${projects.length > 3 ? 'md:grid md:grid-cols-2 gap-x-10 gap-y-5' : ''}`>
         {projects.map(project => (
-            <article class="border-b-2 border-gray-300 grow-0 mt-5 flex flex-col justify-between gap-5">
+            <article class={`border-b-2 border-gray-300 grow-0 mt-5 flex flex-col justify-between gap-5 ${projects.length % 2 !== 0 && 'last:col-span-2'}`}>
                 <header class="flex justify-between">
                     <h3 class="text-2xl">{project.name}</h3>
                     <div class="flex gap-2 flex-wrap justify-end">
