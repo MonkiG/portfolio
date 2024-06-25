@@ -1,22 +1,26 @@
 [
     {
-        "name": "MnkiToast",
-        "description": "Personal opinionated standalone toast component built in web components",
-        "status": ["developing"],
+        "name": "Tekashi Roll",
+        "description": "Web application for the sushi restaurant located in Altavela, Nayarit. Includes an admin panel to manage the products displayed in the app and uses Supabase Realtime to handle to-go orders.",
+        "status": ["hold"],
         "technologies":[
             {
-                "name": "JavaScript",
+                "name": "TypeScript",
                 "imgSrc": ""
             },
             {
-                "name": "Web Components",
+                "name": "NextJs",
+                "imgSrc": ""
+            },
+            {
+                "name": "Supabase",
                 "imgSrc": ""
             }
         ],
         "platforms": [
             {
                 "name": "GitHub",
-                "link": "https://github.com/MonkiG/mnki-toast",
+                "link": "https://github.com/MonkiG/Tekashi-Roll/tree/supabase-migrate",
                 "imgSrc": ""
             }
         ]
@@ -39,6 +43,28 @@
             {
                 "name": "GitHub",
                 "link": "https://github.com/MonkiG/OrderDetector/tree/google",
+                "imgSrc": ""
+            }
+        ]
+    },
+    {
+        "name": "MnkiToast",
+        "description": "Personal opinionated standalone toast component built in web components",
+        "status": ["developing"],
+        "technologies":[
+            {
+                "name": "JavaScript",
+                "imgSrc": ""
+            },
+            {
+                "name": "Web Components",
+                "imgSrc": ""
+            }
+        ],
+        "platforms": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/MonkiG/mnki-toast",
                 "imgSrc": ""
             }
         ]
@@ -91,33 +117,6 @@
             {
                 "name": "GitHub",
                 "link": "https://github.com/MonkiG/mnki-storage"
-            }
-        ]
-    },
-    {
-        "name": "Monki Projects",
-        "description": "Web app that show small projects made with vanilla (plain) JavaScript (TypeScript) created to practice and maintain a programming routine.",
-        "status": ["hold", "maintenance"],
-        "technologies": [
-            {
-                "name": "TypeScript", 
-                "imgSrc": ""
-            },
-            {
-                "name": "Web Components", 
-                "imgSrc": ""
-            }
-        ],
-        "platforms": [
-            {
-                "name": "Web",
-                "link": "https://monki-projects.vercel.app/",
-                "imgSrc": ""
-            },
-            {
-                "name": "GitHub",
-                "link": "https://github.com/MonkiG/MonkiProjects",
-                "imgSrc": ""
             }
         ]
     }
