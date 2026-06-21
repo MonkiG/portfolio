@@ -1,27 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import ExperienceSection from '../components/ExperienceSection.astro'
-import Hero from '../components/Hero.astro'
-import InterestsSection from '../components/InterestsSection.astro'
-import LanguagesSection from '../components/LanguagesSection.astro'
-import ProjectsSection from '../components/ProjectsSection.astro'
+import PortfolioPage from '../components/PortfolioPage.astro'
+import { portfolioContent } from '../i18n/content'
+
+const content = portfolioContent.es
 ---
 
-<BaseLayout>
-    <main class="shell">
-        <Hero />
-
-        <section class="section-grid" aria-label="Portfolio sections">
-            <div class="main-sections">
-                <ExperienceSection />
-                <ProjectsSection />
-            </div>
-            <aside class="side-sections">
-                <LanguagesSection />
-                <InterestsSection />
-            </aside>
-        </section>
-    </main>
-
-    <script src="/main.js" is:inline></script>
+<BaseLayout lang={content.lang} {...content.metadata}>
+    <PortfolioPage content={content} />
 </BaseLayout>

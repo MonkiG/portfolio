@@ -1,0 +1,7 @@
+---
+const { href, label, ariaLabel } = Astro.props;
+---
+
+<nav class="topbar" aria-label="Language">
+  <a class="language-switch" href={href} aria-label={ariaLabel}>{label}</a>
+</nav>

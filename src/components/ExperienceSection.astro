@@ -1,26 +1,13 @@
 ---
 import SectionHeading from './SectionHeading.astro'
 
-const experience = [
-    {
-        period: 'March 2025 - Present',
-        role: 'Web Developer',
-        organization: 'Tafer Resorts',
-        url: 'https://www.taferresorts.com/',
-    },
-    {
-        period: 'March 2024 - August 2024',
-        role: 'Web Developer - Social Service Intern',
-        organization: 'Centro Universitario de la Costa',
-        url: 'https://www.cuc.udg.mx/',
-    },
-]
+const { number, title, items } = Astro.props
 ---
 
 <section class="panel experience" aria-labelledby="experience-title">
-    <SectionHeading number="01" title="Experience" id="experience-title" />
+    <SectionHeading number={number} title={title} id="experience-title" />
     <ol class="timeline">
-        {experience.map((item) => (
+        {items.map((item) => (
             <li>
                 <time>{item.period}</time>
                 <div>

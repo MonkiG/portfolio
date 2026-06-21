@@ -1,16 +1,18 @@
 ---
 import SectionHeading from './SectionHeading.astro'
+
+const { number, title, loading, empty, error, gifAlt } = Astro.props
 ---
 
 <section class="panel projects" aria-labelledby="projects-title">
-    <SectionHeading number="04" title="Projects" id="projects-title" className="project-heading" />
-    <ul id="github-projects" class="project-list" aria-live="polite">
-        <li class="muted">Loading projects...</li>
+    <SectionHeading number={number} title={title} id="projects-title" className="project-heading" />
+    <ul id="github-projects" class="project-list" aria-live="polite" data-empty={empty} data-error={error}>
+        <li class="muted">{loading}</li>
     </ul>
     <figure class="projects-gif">
         <img
             src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDExbWlyNTk5NW1paDhoN2lkcGVycHU4YzZ3NGk1ZXA5ZGhuYnhrcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QMHoU66sBXqqLqYvGO/giphy.gif"
-            alt="this is fine"
+            alt={gifAlt}
         />
     </figure>
 </section>
