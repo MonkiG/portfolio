@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ExperienceSection from '../components/ExperienceSection.astro'
 import Hero from '../components/Hero.astro'
+import InterestsSection from '../components/InterestsSection.astro'
 import LanguagesSection from '../components/LanguagesSection.astro'
 import ProjectsSection from '../components/ProjectsSection.astro'
 ---
@@ -15,7 +16,10 @@ import ProjectsSection from '../components/ProjectsSection.astro'
                 <ExperienceSection />
                 <ProjectsSection />
             </div>
-            <LanguagesSection />
+            <aside class="side-sections">
+                <LanguagesSection />
+                <InterestsSection />
+            </aside>
         </section>
     </main>
 

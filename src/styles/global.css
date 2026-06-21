@@ -165,9 +165,16 @@ h1 {
     grid-column: 1;
 }
 
-.languages {
+.side-sections {
+    display: grid;
     grid-column: span 2;
+    gap: clamp(40px, 5vw, 64px);
     align-self: start;
+}
+
+.languages,
+.interests {
+    grid-column: 1;
 }
 
 .section-heading {
@@ -241,7 +248,8 @@ time,
     margin-top: 4px;
 }
 
-.languages p {
+.languages p,
+.interests p {
     color: #333;
     line-height: 1.7;
 }
@@ -261,11 +269,11 @@ time,
     font-weight: 800;
 }
 
-.languages-gif {
+.projects-gif {
     margin: 28px 0 0;
 }
 
-.languages-gif img {
+.projects-gif img {
     display: block;
     width: min(100%, 220px);
     filter: saturate(0.9);
@@ -320,7 +328,7 @@ time,
     }
 
     .main-sections,
-    .languages {
+    .side-sections {
         grid-column: span 1;
     }
 

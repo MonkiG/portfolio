@@ -1,0 +1,23 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+const interests = [
+  "Low level programming",
+  "Functional programming",
+  "Rust",
+  "C",
+  "Clojure",
+  "Gleam",
+];
+---
+
+<section class="panel interests" aria-labelledby="interests-title">
+  <SectionHeading number="03" title="Interested in" id="interests-title" />
+  <p>
+    Always learning and going deeper into topics that make me think differently
+    about software and systems.
+  </p>
+  <ul class="language-list" aria-label="Interests and current learning topics">
+    {interests.map((interest) => <li>{interest}</li>)}
+  </ul>
+</section>
