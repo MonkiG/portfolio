@@ -14,12 +14,12 @@ const renderProjects = (repos) => {
     }
 
     if (!repos.length) {
-        projectsList.innerHTML = '<li>No projects selected yet.</li>'
+        projectsList.innerHTML = '<li class="muted">No projects selected yet.</li>'
         return
     }
 
     projectsList.innerHTML = repos.map((repo) => {
-        const description = repo.description ? ` - ${escapeHtml(repo.description)}` : ''
+        const description = repo.description ? ` - <span>${escapeHtml(repo.description)}</span>` : ''
 
         return `<li><a href="${repo.html_url}" target="_blank">${escapeHtml(repo.name)}</a>${description}</li>`
     }).join('')
@@ -47,7 +47,7 @@ const loadProjects = async () => {
         renderProjects(data.items || [])
     } catch (error) {
         console.error(error)
-        projectsList.innerHTML = '<li>Unable to load projects.</li>'
+        projectsList.innerHTML = '<li class="muted">Unable to load projects.</li>'
     }
 }
 
