@@ -1,0 +1,16 @@
+---
+import SectionHeading from './SectionHeading.astro'
+
+const languages = ['Go', 'JavaScript', 'TypeScript', 'PHP', 'Python', 'SQL', 'HTML', 'CSS']
+---
+
+<section class="panel languages" aria-labelledby="languages-title">
+    <SectionHeading number="02" title="Languages" id="languages-title" />
+    <p>
+        I have worked with and experimented across a wide range of languages, so adapting to a new stack
+        is usually straightforward: understand the idioms, learn the tooling, and build with intention.
+    </p>
+    <ul class="language-list" aria-label="Languages and tools">
+        {languages.map((language) => <li>{language}</li>)}
+    </ul>
+</section>

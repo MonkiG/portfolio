@@ -1,0 +1,25 @@
+---
+const links = [
+    { label: 'GitHub', href: 'https://github.com/monkig', primary: true },
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/ramonha' },
+]
+---
+
+<section class="hero" aria-labelledby="intro-title">
+    <div class="hero-copy">
+        <p class="eyebrow">Computer Engineer - Puerto Vallarta</p>
+        <h1 id="intro-title">Ramon Hernandez</h1>
+        <p class="lede">
+            Computer Engineer by <a href="https://udg.mx/" target="_blank">Universidad de Guadalajara</a>,
+            focused on building reliable software, useful web systems, and practical tools with clean code
+            and a constant curiosity for how things work.
+        </p>
+        <div class="hero-actions" aria-label="Primary links">
+            {links.map((link) => (
+                <a class:list={['button', { primary: link.primary }]} rel="me" href={link.href} target="_blank">
+                    {link.label}
+                </a>
+            ))}
+        </div>
+    </div>
+</section>

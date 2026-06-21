@@ -1,0 +1,8 @@
+---
+const { number, title, id, className = '' } = Astro.props
+---
+
+<div class:list={['section-heading', className]}>
+    <span>{number}</span>
+    <h2 id={id}>{title}</h2>
+</div>
