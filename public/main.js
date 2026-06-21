@@ -1,6 +1,8 @@
 const GH_USERNAME = 'monkig'
 const TOPIC = 'portfolio-project'
 const projectsList = document.querySelector('#github-projects')
+const emptyMessage = projectsList?.dataset.empty || 'No projects selected yet.'
+const errorMessage = projectsList?.dataset.error || 'Unable to load projects.'
 
 const escapeHtml = (value) => {
     const div = document.createElement('div')
@@ -25,7 +27,7 @@ const renderProjects = (repos) => {
     }
 
     if (!repos.length) {
-        projectsList.innerHTML = '<li class="muted">No projects selected yet.</li>'
+        projectsList.innerHTML = `<li class="muted">${escapeHtml(emptyMessage)}</li>`
         return
     }
 
@@ -59,7 +61,7 @@ const loadProjects = async () => {
         renderProjects(data.items || [])
     } catch (error) {
         console.error(error)
-        projectsList.innerHTML = '<li class="muted">Unable to load projects.</li>'
+        projectsList.innerHTML = `<li class="muted">${escapeHtml(errorMessage)}</li>`
     }
 }
 

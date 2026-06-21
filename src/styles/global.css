@@ -39,6 +39,25 @@ a:hover {
     padding:  0 0 48px 0;
 }
 
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 24px;
+}
+
+.language-switch {
+    display: inline-flex;
+    min-height: 36px;
+    align-items: center;
+    color: var(--accent-strong);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 0.12em;
+    text-transform: uppercase;
+    text-underline-offset: 0.35em;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -304,6 +323,10 @@ time,
     .shell {
         width: min(100% - 24px, 680px);
         padding: 22px 0;
+    }
+
+    .topbar {
+        padding-top: 0;
     }
 
     .section-grid,

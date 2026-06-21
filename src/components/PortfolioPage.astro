@@ -1,0 +1,28 @@
+---
+import ExperienceSection from "./ExperienceSection.astro";
+import Hero from "./Hero.astro";
+import InterestsSection from "./InterestsSection.astro";
+import LanguageSwitch from "./LanguageSwitch.astro";
+import LanguagesSection from "./LanguagesSection.astro";
+import ProjectsSection from "./ProjectsSection.astro";
+
+const { content } = Astro.props;
+---
+
+<main class="shell">
+  <LanguageSwitch {...content.languageSwitch} />
+  <Hero {...content.hero} />
+
+  <section class="section-grid" aria-label={content.sectionsLabel}>
+    <div class="main-sections">
+      <ExperienceSection {...content.experience} />
+      <ProjectsSection {...content.projects} />
+    </div>
+    <aside class="side-sections">
+      <LanguagesSection {...content.languages} />
+      <InterestsSection {...content.interests} />
+    </aside>
+  </section>
+</main>
+
+<script src="/main.js" is:inline></script>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PortfolioPage from '../../components/PortfolioPage.astro'
+import { portfolioContent } from '../../i18n/content'
+
+const content = portfolioContent.en
+---
+
+<BaseLayout lang={content.lang} {...content.metadata}>
+    <PortfolioPage content={content} />
+</BaseLayout>
