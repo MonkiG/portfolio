@@ -8,6 +8,17 @@ const escapeHtml = (value) => {
     return div.innerHTML
 }
 
+const formatProjectName = (name) => name
+    .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+    .replace(/[-_.]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(' ')
+    .map((word) => word.length <= 3 && word === word.toUpperCase()
+        ? word
+        : `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`)
+    .join(' ')
+
 const renderProjects = (repos) => {
     if (!projectsList) {
         return
@@ -20,8 +31,9 @@ const renderProjects = (repos) => {
 
     projectsList.innerHTML = repos.map((repo) => {
         const description = repo.description ? ` - <span>${escapeHtml(repo.description)}</span>` : ''
+        const projectName = formatProjectName(repo.name)
 
-        return `<li><a href="${repo.html_url}" target="_blank">${escapeHtml(repo.name)}</a>${description}</li>`
+        return `<li><a href="${repo.html_url}" target="_blank">${escapeHtml(projectName)}</a>${description}</li>`
     }).join('')
 }
 
