@@ -1,12 +1,20 @@
 ---
 import SectionHeading from './SectionHeading.astro'
 
-const { number, title, loading, empty, error, gifAlt } = Astro.props
+const { number, title, loading, empty, error, visitWebsiteLabel, viewRepositoryLabel, gifAlt } = Astro.props
 ---
 
 <section class="panel projects" aria-labelledby="projects-title">
     <SectionHeading number={number} title={title} id="projects-title" className="project-heading" />
-    <ul id="github-projects" class="project-list" aria-live="polite" data-empty={empty} data-error={error}>
+    <ul
+        id="github-projects"
+        class="project-list"
+        aria-live="polite"
+        data-empty={empty}
+        data-error={error}
+        data-website-label={visitWebsiteLabel}
+        data-repository-label={viewRepositoryLabel}
+    >
         <li class="muted">{loading}</li>
     </ul>
     <figure class="projects-gif">
